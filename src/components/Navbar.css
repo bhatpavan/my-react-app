@@ -1,37 +1,11 @@
-.nav {
+.navbar-img{
+    padding: 20px;
+    padding-left: 30px;
+    
+}
+
+nav{
     display: flex;
-    align-items: center;
-    background: #21222A;
-    padding: 30px 25px;
-}
-
-.nav >h3{
-    margin:0;
-    color: #61DAFB;
-font-family: Inter;
-font-size: 22.253px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: -1.113px;
-margin-right: auto;
-}
-
-.nav >h4{
-    margin:0;
-    color: #DEEBF8;
-text-align: right;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-
-}
-
-
-.nav-img{
-    width: 28.93px;
-    height: 28.93px;
-    padding-right: 7px;
+    background: #FFFFFF;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }

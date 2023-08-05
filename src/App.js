@@ -1,33 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
-import { Navbar } from './components/Navbar';
-import { Main } from './components/Main';
+import { Card } from "./components/Card";
+import { Navbar } from "./components/Navbar";
+import { Welcome } from "./components/Welcome";
+import "./App.css"
 
 function App() {
-  // return (
-  //   <div className="App">
-  //     <header className="App-header">
-  //       <img src={logo} className="App-logo" alt="logo" />
-  //       <p>
-  //         Edit <code>src/App.js</code> and save to reload.
-  //       </p>
-  //       <a
-  //         className="App-link"
-  //         href="https://reactjs.org"
-  //         target="_blank"
-  //         rel="noopener noreferrer"
-  //       >
-  //         Learn React
-  //       </a>
-  //     </header>
-  //   </div>
-  // );
+  let cardelements = [{
+    imgUrl: require("./assets/image 12.png"),
+    country: "USA",
+    noOfRatings: 12,
+    rating: 5.0,
+    openSpots: 20,
+  },
+  {
+    imgUrl: require("./assets/image 12.png"),
+    country: "USA",
+    noOfRatings: 12,
+    rating: 5.0,
+    openSpots: 0,
+  },
+  {
+    imgUrl: require("./assets/image 12.png"),
+    country: "IND",
+    noOfRatings: 12,
+    rating: 3.0,
+    openSpots: 20,
+  }]
   return (
-    <>    
-    <Navbar/>
-    <Main/>
-    </>
+    <>
+      <Navbar></Navbar>
+      <Welcome></Welcome>
+      <div className="app-cards">
+        {cardelements.map(x =>
+          <Card
+            imgUrl={x.imgUrl}
+            country={x.country}
+            noOfRatings={x.noOfRatings}
+            rating={x.rating}
+            openSpots={x.openSpots}
+            >
+          </Card>)}
+      </div>
 
+    </>
   )
 }
 
