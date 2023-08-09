@@ -1,0 +1,45 @@
+.Header {
+    background: linear-gradient(90deg, #672280 0%, #A626D3 100%);
+    height: 65px;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+}
+
+.Header-trollface {
+    width: 31.306px;
+    height: 26.218px;
+    cursor: pointer;
+}
+
+.Header-trollface:hover {
+    width: 31.306px;
+    height: 26.218px;
+    filter: brightness(50%);
+}
+
+.Header-memegenerator {
+    padding-left: 7px;
+    width: 140.792px;
+}
+
+.Header>h1 {
+    margin: 0;
+}
+
+.Header>h3 {
+    height: 14px;
+flex-shrink: 0;
+
+color: #FFF;
+text-align: right;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-left: auto;
+margin-right: 37px;
+
+
+}

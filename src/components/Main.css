@@ -1,0 +1,39 @@
+.main {
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main-input {
+    display: flex;
+    gap: 17px;
+    height: 35px;
+}
+
+.main-image {
+    width: 500px;
+}
+
+.main-input>input {
+    overflow: hidden;
+    flex: 1;
+    border-radius: 5px;
+    border: 1px solid #D5D4D8;
+
+}
+
+.main-input>input:focus {
+    outline: 0;
+}
+
+.main-button {
+    border-radius: 5px;
+    background: linear-gradient(135deg, #711F8D 0%, #A818DA 100%);
+    color: #FFF;
+    border: 0;
+    font-style: normal;
+    font-weight: 500;
+    height: 40px;
+    cursor: pointer;
+}
